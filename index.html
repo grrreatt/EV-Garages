@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EV Garages — Electric Scooter Repair Delhi NCR | Ola | Ather | Chetak</title>
+  <meta name="description" content="Your electric scooter sitting at a service centre for weeks? EV Garages gets it back on the road in 24 hours. Ola S1, Ather, Chetak repair across Delhi NCR.">
+  <meta name="keywords" content="EV Garages Delhi, Ola S1 repair Delhi NCR, electric scooter repair, Ather repair Noida, Chetak repair Delhi, EV scooter service near me">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:        #F7F7F5;
+      --white:     #FFFFFF;
+      --dark:      #0E0E0E;
+      --green:     #00A84F;
+      --green-d:   #007A3A;
+      --green-bg:  #E6F6EE;
+      --orange:    #FF4500;
+      --orange-bg: #FFF1EC;
+      --text:      #1C1C1C;
+      --muted:     #7A7A7A;
+      --border:    #E5E5E5;
+      --wa:        #25D366;
+      --wa-dark:   #1aab53;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(247,247,245,0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 1.5rem;
+    }
+    .nav-logo {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800; font-size: 1.2rem;
+      color: var(--dark); text-decoration: none;
+      display: flex; align-items: center; gap: .45rem;
+    }
+    .nav-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--green);
+      animation: blink 2.5s ease-in-out infinite;
+    }
+    @keyframes blink {
+      0%,100% { opacity:1; transform:scale(1); }
+      50%      { opacity:.5; transform:scale(1.4); }
+    }
+    .btn-wa-sm {
+      display: inline-flex; align-items: center; gap: .4rem;
+      background: var(--wa); color: #fff;
+      padding: .5rem 1.1rem; border-radius: 6px;
+      font-weight: 600; font-size: .85rem;
+      text-decoration: none;
+    }
+    .btn-wa-sm:hover { background: var(--wa-dark); }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 9rem 1.5rem 5rem;
+      max-width: 920px; margin: 0 auto;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--orange-bg);
+      border: 1px solid rgba(255,69,0,.18);
+      border-radius: 100px; padding: .35rem .9rem;
+      font-size: .75rem; font-weight: 600;
+      color: var(--orange); letter-spacing: .05em;
+      text-transform: uppercase;
+      width: fit-content; margin-bottom: 1.75rem;
+    }
+    .hero-h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.4rem, 7vw, 5rem);
+      line-height: 1.06; color: var(--dark);
+      letter-spacing: -.025em; margin-bottom: 1rem;
+    }
+    .hero-h1 .g { color: var(--green); }
+    .hero-sub {
+      font-size: clamp(1rem, 2.2vw, 1.15rem);
+      color: var(--muted); max-width: 520px;
+      margin-bottom: 2.5rem; line-height: 1.8;
+    }
+    .hero-sub strong { color: var(--text); }
+    .hero-actions {
+      display: flex; gap: .85rem; flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .btn-wa-lg {
+      display: inline-flex; align-items: center; gap: .55rem;
+      background: var(--wa); color: #fff;
+      padding: .95rem 2rem; border-radius: 8px;
+      font-weight: 700; font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 4px 18px rgba(37,211,102,.3);
+      transition: background .2s, transform .15s;
+    }
+    .btn-wa-lg:hover { background: var(--wa-dark); transform: translateY(-1px); }
+    .btn-call {
+      display: inline-flex; align-items: center; gap: .45rem;
+      border: 2px solid var(--border); color: var(--text);
+      padding: .95rem 1.75rem; border-radius: 8px;
+      font-weight: 600; font-size: 1rem;
+      text-decoration: none;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-call:hover { border-color: var(--green); color: var(--green); }
+
+    /* COMPARE STRIP */
+    .compare {
+      display: flex;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--white);
+      width: fit-content;
+    }
+    .cmp {
+      padding: 1.2rem 1.6rem;
+      display: flex; flex-direction: column; gap: .2rem;
+    }
+    .cmp-bad { background: var(--orange-bg); border-right: 1px solid var(--border); }
+    .cmp-lbl {
+      font-size: .68rem; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase;
+    }
+    .cmp-bad .cmp-lbl { color: var(--orange); }
+    .cmp-good .cmp-lbl { color: var(--green); }
+    .cmp-val {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800; font-size: 1.8rem; line-height: 1;
+    }
+    .cmp-bad .cmp-val { color: var(--orange); }
+    .cmp-good .cmp-val { color: var(--green); }
+    .cmp-note { font-size: .78rem; color: var(--muted); }
+
+    /* BRANDS */
+    .brands-bar {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      background: var(--white);
+    }
+    .brands-inner {
+      max-width: 920px; margin: 0 auto;
+      display: flex; align-items: center;
+      gap: 1.25rem; flex-wrap: wrap;
+    }
+    .brands-lbl {
+      font-size: .7rem; letter-spacing: .13em;
+      text-transform: uppercase; font-weight: 600;
+      color: var(--muted); white-space: nowrap;
+    }
+    .brand-tag {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700; font-size: .82rem;
+      letter-spacing: .06em; text-transform: uppercase;
+      color: var(--muted);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px; padding: .3rem .75rem;
+    }
+
+    /* PROBLEMS */
+    .problems {
+      background: var(--orange-bg);
+      border-top: 1px solid rgba(255,69,0,.1);
+      border-bottom: 1px solid rgba(255,69,0,.1);
+      padding: 5rem 1.5rem;
+    }
+    .problems-inner { max-width: 920px; margin: 0 auto; }
+    .sec-eye {
+      font-size: .72rem; letter-spacing: .15em;
+      text-transform: uppercase; font-weight: 700;
+      margin-bottom: .85rem;
+    }
+    .sec-h {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.7rem, 4vw, 2.75rem);
+      line-height: 1.08; letter-spacing: -.015em;
+      color: var(--dark); margin-bottom: 2rem;
+    }
+    .prob-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 1rem;
+    }
+    .prob-card {
+      background: var(--white);
+      border: 1px solid rgba(255,69,0,.12);
+      border-radius: 10px; padding: 1.3rem;
+    }
+    .prob-head {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700; font-size: .95rem;
+      color: var(--dark); margin-bottom: .35rem;
+    }
+    .prob-body { font-size: .84rem; color: var(--muted); line-height: 1.65; }
+
+    /* SERVICES */
+    .services {
+      padding: 5rem 1.5rem;
+      background: var(--bg);
+    }
+    .services-inner { max-width: 920px; margin: 0 auto; }
+    .svc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1px; background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden;
+      margin-top: 2.5rem;
+    }
+    .svc-card {
+      background: var(--white); padding: 1.6rem;
+      transition: background .18s;
+    }
+    .svc-card:hover { background: var(--green-bg); }
+    .svc-icon { font-size: 1.5rem; margin-bottom: .75rem; display: block; }
+    .svc-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700; font-size: 1rem;
+      color: var(--dark); margin-bottom: .3rem;
+    }
+    .svc-desc { font-size: .84rem; color: var(--muted); line-height: 1.65; }
+
+    /* PARTNERS */
+    .partners {
+      padding: 4rem 1.5rem;
+      background: var(--green-bg);
+      border-top: 1px solid rgba(0,168,79,.15);
+      border-bottom: 1px solid rgba(0,168,79,.15);
+    }
+    .partners-inner { max-width: 920px; margin: 0 auto; }
+    .partners-row {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    .p-card {
+      background: var(--white);
+      border: 1px solid rgba(0,168,79,.2);
+      border-radius: 10px; padding: 1.1rem 1.4rem;
+      display: flex; align-items: center; gap: .75rem;
+      flex: 1; min-width: 220px;
+    }
+    .p-badge {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--green); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800; font-size: 1rem; flex-shrink: 0;
+    }
+    .p-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700; font-size: .95rem; color: var(--dark);
+    }
+    .p-loc { font-size: .78rem; color: var(--muted); }
+    .p-live {
+      margin-left: auto;
+      font-size: .68rem; font-weight: 600;
+      color: var(--green); letter-spacing: .06em;
+      text-transform: uppercase;
+      background: var(--green-bg);
+      border-radius: 4px; padding: .15rem .45rem;
+      white-space: nowrap;
+    }
+
+    /* CTA */
+    .cta {
+      padding: 6rem 1.5rem; text-align: center;
+      background: var(--green);
+    }
+    .cta-eye {
+      font-size: .72rem; letter-spacing: .15em;
+      text-transform: uppercase; font-weight: 700;
+      color: rgba(255,255,255,.6); margin-bottom: .75rem;
+    }
+    .cta-h {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      color: #fff; line-height: 1.05;
+      letter-spacing: -.02em; margin-bottom: .6rem;
+    }
+    .cta-sub {
+      font-size: 1rem; color: rgba(255,255,255,.72);
+      margin-bottom: 2.25rem;
+    }
+    .btn-dark {
+      display: inline-flex; align-items: center; gap: .6rem;
+      background: var(--dark); color: #fff;
+      padding: 1rem 2.1rem; border-radius: 8px;
+      font-weight: 700; font-size: 1rem;
+      text-decoration: none;
+      transition: transform .15s;
+    }
+    .btn-dark:hover { transform: translateY(-2px); }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      padding: 3rem 1.5rem;
+    }
+    .foot-inner {
+      max-width: 920px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem;
+    }
+    .foot-logo {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800; font-size: 1.3rem;
+      color: var(--green); margin-bottom: .4rem;
+    }
+    .foot-sub { font-size: .84rem; color: #555; line-height: 1.6; }
+    .foot-h {
+      font-size: .7rem; letter-spacing: .12em;
+      text-transform: uppercase; font-weight: 600;
+      color: #444; margin-bottom: .85rem;
+    }
+    .foot-list { list-style: none; display: flex; flex-direction: column; gap: .4rem; }
+    .foot-list li { font-size: .84rem; color: #555; }
+    .foot-bottom {
+      max-width: 920px; margin: 2rem auto 0;
+      padding-top: 1.5rem; border-top: 1px solid #1a1a1a;
+      display: flex; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .foot-copy { font-size: .78rem; color: #3a3a3a; }
+
+    /* FLOAT WA */
+    .float-wa {
+      position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 199;
+      background: var(--wa); color: #fff;
+      width: 58px; height: 58px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 22px rgba(37,211,102,.4);
+      animation: wa-pulse 3s ease-in-out infinite;
+      transition: transform .2s;
+    }
+    .float-wa:hover { transform: scale(1.1); animation: none; }
+    @keyframes wa-pulse {
+      0%,100% { box-shadow: 0 4px 22px rgba(37,211,102,.4); }
+      50%      { box-shadow: 0 4px 36px rgba(37,211,102,.7); }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      .compare { flex-direction: column; }
+      .cmp-bad { border-right: none; border-bottom: 1px solid var(--border); }
+      .hero-actions { flex-direction: column; }
+      .btn-wa-lg, .btn-call { justify-content: center; }
+      .foot-inner { grid-template-columns: 1fr; }
+      .foot-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">
+    <span class="nav-dot"></span>
+    EV Garages
+  </a>
+  <a href="#cta" class="btn-wa-sm" id="nav-wa">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-tag">⚠ Scooter sitting at service centre for days?</div>
+  <h1 class="hero-h1">
+    We get it back<br>
+    on the road in<br>
+    <span class="g">24 hours.</span>
+  </h1>
+  <p class="hero-sub">
+    Ola, Ather, Chetak, TVS iQube —
+    <strong>any EV scooter, any fault.</strong>
+    WhatsApp us your problem. We handle the rest.
+  </p>
+  <div class="hero-actions">
+    <a href="#cta" class="btn-wa-lg" id="hero-wa">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp Now
+    </a>
+    <a href="tel:+918178709672" class="btn-call">📞 +91 81787 09672</a>
+  </div>
+  <div class="compare">
+    <div class="cmp cmp-bad">
+      <span class="cmp-lbl">Ola Service Centre</span>
+      <span class="cmp-val">Months</span>
+      <span class="cmp-note">Waiting. No updates.</span>
+    </div>
+    <div class="cmp cmp-good">
+      <span class="cmp-lbl">EV Garages</span>
+      <span class="cmp-val">24 hrs</span>
+      <span class="cmp-note">Repaired. Back on road.</span>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<div class="brands-bar">
+  <div class="brands-inner">
+    <span class="brands-lbl">We repair</span>
+    <span class="brand-tag">Ola S1</span>
+    <span class="brand-tag">Ather 450</span>
+    <span class="brand-tag">Bajaj Chetak</span>
+    <span class="brand-tag">TVS iQube</span>
+    <span class="brand-tag">Hero Vida</span>
+    <span class="brand-tag">Ampere</span>
+    <span class="brand-tag">Okinawa</span>
+  </div>
+</div>
+
+<!-- PROBLEMS -->
+<section class="problems">
+  <div class="problems-inner">
+    <p class="sec-eye" style="color:var(--orange)">Sound familiar?</p>
+    <h2 class="sec-h">
+      What Ola owners<br>deal with every day.
+    </h2>
+    <div class="prob-grid">
+      <div class="prob-card">
+        <p class="prob-head">Weeks with no update</p>
+        <p class="prob-body">Scooter dropped off, not touched. Nobody calls. Nobody responds.</p>
+      </div>
+      <div class="prob-card">
+        <p class="prob-head">Parts "not available"</p>
+        <p class="prob-body">Told to wait indefinitely. No timeline. No solution in sight.</p>
+      </div>
+      <div class="prob-card">
+        <p class="prob-head">Paid, problem still there</p>
+        <p class="prob-body">Money taken for a service that fixed nothing. Same fault, same scooter.</p>
+      </div>
+      <div class="prob-card">
+        <p class="prob-head">Can't even reach them</p>
+        <p class="prob-body">Calls go unanswered. Visits end in "come back tomorrow."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="services-inner">
+    <p class="sec-eye" style="color:var(--green)">What we fix</p>
+    <h2 class="sec-h">Every EV fault. One number.</h2>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <span class="svc-icon">⚡</span>
+        <p class="svc-name">Battery Repair</p>
+        <p class="svc-desc">Cell testing, BMS diagnosis, battery pack repair and replacement.</p>
+      </div>
+      <div class="svc-card">
+        <span class="svc-icon">🔍</span>
+        <p class="svc-name">Fault Diagnosis</p>
+        <p class="svc-desc">Full error code scan and system check across all EV scooter brands.</p>
+      </div>
+      <div class="svc-card">
+        <span class="svc-icon">🧠</span>
+        <p class="svc-name">Controller Repair</p>
+        <p class="svc-desc">Throttle faults, MOSFET failures, controller errors fixed.</p>
+      </div>
+      <div class="svc-card">
+        <span class="svc-icon">⚙️</span>
+        <p class="svc-name">Motor Service</p>
+        <p class="svc-desc">Hub motor bearing replacement, hall sensor testing, motor diagnostics.</p>
+      </div>
+      <div class="svc-card">
+        <span class="svc-icon">🔌</span>
+        <p class="svc-name">Charger Repair</p>
+        <p class="svc-desc">Charging port, charger unit testing, repair or replacement.</p>
+      </div>
+      <div class="svc-card">
+        <span class="svc-icon">🔧</span>
+        <p class="svc-name">Wiring & Electrical</p>
+        <p class="svc-desc">Water ingress, connector faults, wiring harness damage — traced and fixed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners">
+  <div class="partners-inner">
+    <p class="sec-eye" style="color:var(--green)">Our Repair Partners — Delhi NCR</p>
+    <div class="partners-row">
+      <div class="p-card">
+        <div class="p-badge">K</div>
+        <div>
+          <p class="p-name">Kapoor EV Service</p>
+          <p class="p-loc">Raghubir Nagar, New Delhi</p>
+        </div>
+        <span class="p-live">Active</span>
+      </div>
+      <div class="p-card">
+        <div class="p-badge">G</div>
+        <div>
+          <p class="p-name">G-EV Tech Mobility</p>
+          <p class="p-loc">Noida, Uttar Pradesh</p>
+        </div>
+        <span class="p-live">Active</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="cta">
+  <p class="cta-eye">Stop waiting. Start riding.</p>
+  <h2 class="cta-h">WhatsApp us.<br>Scooter fixed.</h2>
+  <p class="cta-sub">Tell us your vehicle model and the problem. We take it from there.</p>
+  <a href="#" class="btn-dark" id="cta-wa">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp +91 81787 09672
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-inner">
+    <div>
+      <p class="foot-logo">EV Garages</p>
+      <p class="foot-sub">Delhi NCR's EV scooter repair network.</p>
+    </div>
+    <div>
+      <p class="foot-h">Areas We Cover</p>
+      <ul class="foot-list">
+        <li>New Delhi</li>
+        <li>Noida</li>
+        <li>Ghaziabad</li>
+        <li>Gurugram</li>
+        <li>Faridabad</li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot-h">Contact</p>
+      <ul class="foot-list">
+        <li>+91 81787 09672</li>
+        <li>Mon–Sat · 9am–7pm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <p class="foot-copy">© 2026 EV Garages · Delhi NCR</p>
+    <p class="foot-copy">Your scooter. Back on the road. ⚡</p>
+  </div>
+</footer>
+
+<!-- FLOAT WA -->
+<a href="#" class="float-wa" id="float-wa" aria-label="WhatsApp EV Garages">
+  <svg width="27" height="27" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  var WA = "https://wa.me/918178709672?text=" + encodeURIComponent("Hi EV Garages, my scooter needs repair. Can you help?");
+  ["nav-wa","hero-wa","cta-wa","float-wa"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.href = WA;
+  });
+</script>
+</body>
+</html>
